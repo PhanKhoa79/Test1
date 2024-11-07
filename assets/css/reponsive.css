@@ -1,0 +1,278 @@
+html {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 48rem){
+ 
+            /* content */
+            .is-mobile {
+                display: block;
+                width: 100%;
+            }
+
+            .is-desktop, .page-eight__header-left h3, .page-eight__header-right a {
+                display: none;
+            }
+
+            .page-six__content, .page-seven__content, .content-wrapper, .page-eight__content 
+            .page-eight__content, .page-eight__content-right-item, .footer__top {
+                flex-direction: column;
+            } 
+
+            .content-title {
+                width: 100%;
+                text-align: center;
+            }
+
+            .container{
+                max-width: 540px !important;
+            }
+
+            .page-four__left, .page-four__right, 
+            .content-image, .box-register, .page-six__content-left, .page-six__content-item, .page-seven__content-left,
+            .page-seven__content-right, .content-right-item__img, 
+            .content-right-item__body-img, .footer__middle-right {
+                width: 100%;
+            }
+
+            .title-course h2, .page-three__title h2, .content-item h2, .page-seven__content-left h2,
+            .text-orange h2, .text-purple h2, .page-four__title h2, .page-five__title h2, .page-eight__header-left h2{
+                font-size: 24px;
+            }
+
+            .page-five__title span {
+                font-size: 32px;
+            }
+
+            .header-title-course p, .page-six__title p, .content-title p {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .page-six__title h2, .page-seven__content-left h3, .content-title h2 {
+                font-size: 20px;
+            }
+
+            .content-item h2, .page-four__right h2, .page-four__right h3, .page-five__title p,
+            .page-eight__header-left h2 {
+                text-align: center;
+            }
+
+            .page-four__right>div {
+                display: flex;
+                justify-content: center;
+            }
+
+            .page-five__content-item {
+                width: 45%;
+            }
+
+            .page-five__content {
+                flex-wrap: wrap;
+            }
+
+            .page-six__content-item:nth-child(2) {
+                border: 1px solid #fff;
+                border-color: #fda29b transparent;
+                padding: 12px 0;
+            }
+
+            .content-right-item__body-img {
+                gap: 12px
+            }
+
+            .view-all {
+                padding: 10px 16px;
+                display: block;
+                width: 100%;
+                height: 44px;
+                border: 1px solid #ffa8a5;
+                border-radius: 8px;
+                margin-top: 40px;
+                color: #b80006;
+            }
+
+            .view-all a {
+                color: #b80006;
+                font-weight: 800;
+                font-size: 16px;
+            }
+
+            .footer__top-right {
+                padding: 0;
+                margin-top: 40px;
+            }
+
+            .col {
+                width: 50%;
+            }
+
+            .footer__middle-right {
+                margin-top: 20px;
+            }
+}
+
+@media only screen and (max-width: 48rem), 
+            (min-width: 48.06rem) and (max-width: 64rem){ /* max-width: 768px, min-with: 769px and max-width: 1024px*/  
+    /* header-top */
+    .nav-top {
+        padding: 8px 16px;
+    }
+
+    .nav-top .nav-top__box p {
+        max-width: 200px;
+        font-size: 10px;
+    }
+
+    .down .text {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .down .time {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .box-claim__btn {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    /* header-bot */
+    .logo img {
+        max-width: none; 
+        width: 112px;
+    }
+
+    .btn-res-m {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 28px;
+        border: 1px solid #ee202e;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: red;
+    }
+
+    .nav-bot__right {
+        display: none;
+    }
+
+    .navbar-m {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .search-container-desktop {
+        margin-right: 0;
+    }
+
+    .nav-bot__box {
+        margin: 0 1rem;
+    }
+
+    .nav-top__right {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    /* content */
+    .form-register {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .font-gray-small {
+        font-size: 16px;
+    }
+
+    .box-return-home {
+        top: 48%;
+    }
+
+    .price-list {
+        font-size: 16px;
+        line-height: 24px;
+        width: calc(100% - 32px);
+        height: 48px;
+        font-weight: 600;
+        background: #ee202e;
+        border-radius: 6px;
+        position: absolute;
+        margin-top: 40px;
+    }
+
+    .language-dropdown {
+        margin-top: 40px;
+    }
+    
+    .nav-bot {
+        max-width: 100% !important;
+    }
+  
+    .content-banner {
+        height: 760px;
+    }
+
+    .content-banner__body {
+        flex-direction: column;
+    }
+
+    .content-banner__body-left, .wrapper__page-three .course-item, .page-eight__content-left, .page-eight__content-right {
+        width: 100%;
+    }
+}
+  
+/* Medium Screens (Large Tablets) */
+@media only screen and (min-width: 48.06rem) and (max-width: 64rem) { /* min-width: 769px and max-width: 1024px */
+    .container{
+        max-width: 720px !important;
+    }
+
+    .footer__middle-right {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .card-item__body-badge {
+        width: 100%;
+    }
+    
+    .is-mobile-1 {
+        display: block;
+        width: 100%;
+    }
+
+    .is-desktop-1 {
+        display: none;
+    }
+
+}
+  
+/* Large Screens (Desktops) */
+@media only screen and (min-width: 64.06rem) and (max-width: 75rem) { /* min-width: 1025px and max-width: 1200px */
+    .footer__middle-right {
+        width: 50%;
+    }
+
+    .nav-top {
+        padding: 8px 16px;
+    }
+
+    .nav-bot__box {
+        margin: 0;
+    }
+
+    .header-title-course {
+        padding: 24px 0;
+    }
+
+}
+

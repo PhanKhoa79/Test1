@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/icon/logo.png">
+  
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+            
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+
+    <title>Monkey - Tiếng Anh cho mọi trẻ em</title>
+</head>
+<body>
+    <div class="box-zalo" onclick="showQr()">
+        <img src="./assets/icon/Zalo_Support.png" alt="">
+    </div>
+
+    <div class="modal-zalo">
+        <img src="./assets/icon/qr.jpeg" alt="">
+    </div>
+
+    <header>
+        <nav class="nav-top d-flex justify-content-center">
+            <div class="nav-top__box container d-flex align-items-center">
+                <p>Monkey Junior - Lộ trình toàn diện cho bé từ 0 đến 11 tuổi 
+                    <br>   
+                    Giá mở bán cực ưu đãi kèm quà tặng độc quyền "CỰC HOT"
+                </p>
+                <div class="nav-top__right d-flex align-items-center justify-content-between">
+                    <div class="count-down flex justify-content-center align-items-center">
+                        <div class="down d-flex flex-column">
+                            <span id="days" class="time text-align-center"></span>
+                            <span class="text text-align-center">Ngày</span>
+                        </div>
+                        <div class="down d-flex flex-column">
+                            <span id="hours" class="time text-align-center"></span>
+                            <span class="text text-align-center">Giờ</span>
+                        </div>
+                        <div class="down d-flex flex-column">
+                            <span id="minutes" class="time text-align-center"></span>
+                            <span class="text text-align-center">Phút</span>
+                        </div>
+                        <div class="down d-flex flex-column">
+                            <span id="seconds" class="time text-align-center"></span>
+                            <span class="text text-align-center">Giây</span>
+                        </div>
+                    </div>
+                    <div class="box-claim">
+                        <a href="" class="box-claim__btn">Nhận ưu đãi</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav-bot container d-flex justify-content-center align-items-center">
+            <div class="nav-bot__box container justify-content-between d-flex align-items-center">
+                <a href="#" class="logo">
+                    <img src="./assets/img/logo.png" alt="Monkey Tiếng Anh cho mọi trẻ em" width="128" height="32">
+                </a>
+                <div class="nav-bot__right d-flex">
+                    <div >
+                        <ul class="nav-bot__right-items d-flex align-items-center">
+                            <li class="nav-bot__right-item">
+                                <label>
+                                    <a href="" title="Sản Phẩm">Sản Phẩm</a>
+                                </label>
+                                <ul class="sub-menu sub-menu-one d-flex">
+                                    <li class="sub-menu-part">
+                                        <p class="sub-menu-item-title f-w-16 f-color-red">Học tiếng anh</p>
+                                        <div class="sub-menu-list d-flex flex-column mtp-24 gap-12">
+                                            <div class="sub-menu-item d-flex gap-12 p-16">
+                                                <a href="#" class="sub-menu-item-link">
+                                                    <img src="./assets/icon/img-item1.png" alt="">
+                                                </a>
+                                                <div class="body">
+                                                    <p class="body-title f-w-14 f-color-black">Monkey Junior</p> 
+                                                    <p class="body-detail f-w-12">Lộ trình toàn diện</p>
+                                                </div>
+                                                <div class="optional d-flex align-items-center gap-4">
+                                                    <p class="optional-text">Hot</p>
+                                                    <img src="./assets/icon/hot.png">
+                                                </div>
+                                            </div>
+                                            <div class="sub-menu-item d-flex gap-12 p-16">
+                                                <a href="#" class="sub-menu-item-link">
+                                                    <img src="./assets/icon/img-item2.png" alt="">
+                                                </a>
+                                                <div class="body">
+                                                    <p class="body-title f-w-14 f-color-black">Monkey ABC</p> 
+                                                    <p class="body-detail f-w-12">Học đọc 6 ngôn ngữ phổ biến</p>
+                                                </div>
+                                            </div>
+                                            <div class="sub-menu-item d-flex gap-12 p-16">
+                                                <a href="#" class="sub-menu-item-link">
+                                                    <img src="./assets/icon/img-item3.png" alt="">
+                                                </a>
+                                                <div class="body">
+                                                    <p class="body-title f-w-14 f-color-black">Monkey Speak</p> 
+                                                    <p class="body-detail f-w-12">Phát âm và Giao tiếp</p>
+                                                </div>
+                                            </div>
+                                            <div class="sub-menu-item d-flex gap-12 p-16">
+                                                <a href="#" class="sub-menu-item-link">
+                                                    <img src="./assets/icon/img-item4.png" alt="">
+                                                </a>
+                                                <div class="body">
+                                                    <p class="body-title f-w-14 f-color-black">Monkey Stories</p> 
+                                                    <p class="body-detail f-w-12">Kho truyện tương tác</p>
+                                                </div>
+                                            </div>
+                                            <div class="sub-menu-item d-flex gap-12 p-16">
+                                                <a href="#" class="sub-menu-item-link">
+                                                    <img src="./assets/icon/img-item5.png" alt="">
+                                                </a>
+                                                <div class="body">
+                                                    <p class="body-title f-w-14 f-color-black">Monkey Tutoring</p> 
+                                                    <p class="body-detail f-w-12">Gia sư trực tuyến</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sub-menu-part">
+                                        <p class="sub-menu-item-title f-w-16 f-color-red">Sản phẩm khác</p>
+                                        <div class="sub-menu-list d-flex flex-column mtp-24 gap-12">
+                                            <div class="sub-menu-item d-flex gap-12 p-16">
+                                                <a href="#" class="sub-menu-item-link">
+                                                    <img src="./assets/icon/img-item6.png" alt="">
+                                                </a>
+                                                <div class="body">
+                                                    <p class="body-title f-w-14 f-color-black">Monkey Math</p> 
+                                                    <p class="body-detail f-w-12">Toán Tiếng Anh</p>
+                                                </div>
+                                            </div>
+                                            <div class="sub-menu-item d-flex gap-12 p-16">
+                                                <a href="#" class="sub-menu-item-link">
+                                                    <img src="./assets/icon/img-item7.png" alt="">
+                                                </a>
+                                                <div class="body">
+                                                    <p class="body-title f-w-14 f-color-black">VMonkey</p> 
+                                                    <p class="body-detail f-w-12">Truyện Tiếng Việt</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="sub-menu-part">
+                                        <p class="sub-menu-item-title f-w-16 f-color-red">Dành cho nhà trường</p>
+                                        <div class="sub-menu-list d-flex flex-column mtp-24 gap-12">
+                                            <div class="sub-menu-item d-flex gap-12 p-16">
+                                                <a href="#" class="sub-menu-item-link">
+                                                    <img src="./assets/icon/img-item8.png" alt="">
+                                                </a>
+                                                <div class="body">
+                                                    <p class="body-title f-w-14 f-color-black">Monkey Class</p> 
+                                                    <p class="body-detail f-w-12">Giải pháp số cho trường học</p>
+                                                </div>
+                                            </div>
+                                            <div class="sub-menu-item d-flex gap-12 p-16">
+                                                <a href="#" class="sub-menu-item-link">
+                                                    <img src="./assets/icon/img-item9.png" alt="">
+                                                </a>
+                                                <div class="body">
+                                                    <p class="body-title f-w-14 f-color-black">Monkey Kindy</p> 
+                                                    <p class="body-detail f-w-12">Chương trình tiếng Anh mầm non có bản quyền</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-bot__right-item">
+                                <label>
+                                    <a href="" title="Về Monkey">Về Monkey</a>
+                                </label>
+                                <ul class="sub-menu sub-menu-two d-flex flex-column">
+                                    <li>
+                                        <a href="" class="d-flex align-items-center gap-12">
+                                            <img src="./assets/icon/intro.svg" width="44px" height="44px">
+                                            Giới thiệu
+                                        </a>
+                                    </li>
+                                    <li> 
+                                        <a href="" class="d-flex align-items-center gap-12">
+                                            <img src="./assets/icon/achievement.svg" alt="">
+                                            Thành tự nổi bật
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-flex align-items-center gap-12">
+                                            <img src="./assets/icon/story.svg" alt="">
+                                            Câu chuyện thương hiệu
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-flex align-items-center gap-12">
+                                            <img src="./assets/icon/news.svg" alt="">
+                                            Báo chí nói về Monkey
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-bot__right-item">
+                                <label>
+                                    <a href="" title="Góc Ba Mẹ">Góc Ba Mẹ</a>
+                                </label>
+                                <ul class="sub-menu sub-menu-three d-flex flex-column">
+                                    <li>
+                                        <a href="" class="d-flex align-items-center gap-12">
+                                            <img src="./assets/icon/hl1.svg" width="44px" height="44px">
+                                            Học liệu
+                                        </a>
+                                    </li>
+                                    <li> 
+                                        <a href="" class="d-flex align-items-center gap-12">
+                                            <img src="./assets/icon/tn1.svg" alt="">
+                                            Trắc nghiệm hay
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-flex align-items-center gap-12">
+                                            <img src="./assets/icon/tn2.svg" alt="">
+                                            Ba mẹ cần biết
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-flex align-items-center gap-12">
+                                            <img src="./assets/icon/tn3.svg" alt="">
+                                            Tin tức sự kiện
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-bot__right-item">
+                                <label>
+                                    <a href="" title="Hỗ Trợ">Hỗ Trợ</a>
+                                </label>
+                                <ul class="sub-menu sub-menu-four d-flex flex-column">
+                                    <li>
+                                        <a href="" class="d-flex align-items-center gap-12">
+                                            <img src="./assets/icon/ht1.svg" width="44px" height="44px">
+                                            Hỗ trợ khách hàng
+                                        </a>
+                                    </li>
+                                    <li> 
+                                        <a href="" class="d-flex align-items-center gap-12">
+                                            <img src="./assets/icon/ht2.svg" alt="">
+                                            Hướng dẫn học
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="d-flex align-items-center gap-12">
+                                            <img src="./assets/icon/fb.png" alt="">
+                                            Cộng đồng ba mẹ Monkey
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-bot__right-item">
+                                <div class="search-container-desktop d-flex align-items-center">
+                                    <div class="btn-search-desktop"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#" class="price-list">Bảng giá</a>
+                    <div class="language-dropdown">
+                        <button class="dropdown-toggle d-flex align-items-center" type="button">
+                            <img src="./assets/icon/vietnam.svg" alt="vi-flag" class="icon-lang" width="20" height="15">
+                            Tiếng việt 
+                        </button>
+                        <div class="dropdown-menu flex-column align-items-center">
+                            <a href="#" class="dropdown-item active item-language d-flex" data-language="vi">
+                                <img src="./assets/icon/vietnam.svg" alt="" class="icon-lang" width="20" height="15">
+                                Việt Nam
+                            </a>
+                            <a href="#" class="dropdown-item item-language d-flex" data-language="en">
+                                <img src="./assets/icon/us-flag_v2.jpg" alt="" class="icon-lang">
+                                Engish
+                            </a>
+                            <a href="#" class="dropdown-item item-language d-flex" width="20" height="15" data-language="tl">
+                                <img src="./assets/icon/thailand.svg" alt="" class="icon-lang">
+                                ประเทศไทย
+                            </a>
+                            <a href="#" class="dropdown-item item-language d-flex" data-language="ml">
+                                <img src="./assets/icon/malaysia_2.jpg" alt="" class="icon-lang">
+                                Malaysia
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-m">
+                    <div class="search-container-desktop d-flex align-items-center">
+                        <div class="btn-search-desktop"></div>
+                    </div>
+                    <a href="#" class="btn-res-m">Bảng giá</a>
+                    <button type="button" class="navbar-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"></path>
+                            </svg>
+                    </button>
+                </div>
+                <div class="navbar-collapse">
+                    <span class="navbar-collapse__btn-close"></span>
+                    <ul class="navbar-collapse-items d-flex flex-column">
+                        <li class="navbar-collapse-item">
+                            <span class="title-item">Sản phẩm</span>
+                            <span class="show-menu"></span>
+                        </li>
+                        <li class="navbar-collapse-item">
+                            <span class="title-item">Về Monkey</span>
+                            <span class="show-menu"></span>
+                        </li>
+                        <li class="navbar-collapse-item">
+                            <span class="title-item">Góc Ba Mẹ</span>
+                            <span class="show-menu"></span>
+                        </li>
+                        <li class="navbar-collapse-item">
+                            <span class="title-item">Hỗ Trợ</span>
+                            <span class="show-menu"></span>
+                        </li>
+                    </ul>
+                    <div class="language-dropdown">
+                        <button class="dropdown-toggle d-flex align-items-center" type="button">
+                            <img src="./assets/icon/vietnam.svg" alt="vi-flag" class="icon-lang" width="20" height="15">
+                            Tiếng việt 
+                        </button>
+                        <div class="dropdown-menu flex-column align-items-center">
+                            <a href="#" class="dropdown-item active item-language d-flex" data-language="vi">
+                                <img src="./assets/icon/vietnam.svg" alt="" class="icon-lang" width="20" height="15">
+                                Việt Nam
+                            </a>
+                            <a href="#" class="dropdown-item item-language d-flex" data-language="en">
+                                <img src="./assets/icon/us-flag_v2.jpg" alt="" class="icon-lang">
+                                Engish
+                            </a>
+                            <a href="#" class="dropdown-item item-language d-flex" width="20" height="15" data-language="tl">
+                                <img src="./assets/icon/thailand.svg" alt="" class="icon-lang">
+                                ประเทศไทย
+                            </a>
+                            <a href="#" class="dropdown-item item-language d-flex" data-language="ml">
+                                <img src="./assets/icon/malaysia_2.jpg" alt="" class="icon-lang">
+                                Malaysia
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="price-list">Bảng giá</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="box-return-home" id="back-top" onclick="topFunction()">
+            <div class="go-to-top d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+                  </svg>       
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="wrapper">
+            <div class="wrapper__banner d-flex justify-content-center">
+                <div class="carousel">
+                    <ol class="carousel-indicators d-flex justify-content-center align-items-center">
+                        <li class="active carousel-indicator" onclick="plusSlides(-1)"></li>
+                        <li class="carousel-indicator" onclick="plusSlides(1)"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item fade">
+                            <img src="./assets/img/banner1.png" alt="">
+                        </div>
+                        <div class="carousel-item fade">
+                            <img src="./assets/img/banner2.png" alt="">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" onclick="plusSlides(-1)">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" onclick="plusSlides(1)">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="wrapper__page-one d-flex align-items-center">
+                <div class="container">
+                    <div class="form-register d-flex">
+                        <img class="img-form-register" src="./assets/img/banner3.png" alt="">
+                        <div class="box-register d-flex justify-content-center flex-column">
+                            <div class="box-register__title d-flex flex-column justify-content-center">
+                                <h2 class="f-w-32 f-color-black text-align-center">Đăng ký tư vấn nhận ưu đãi</h2> 
+                                <div class="box-register__title-option gap-12 d-flex align-items-center justify-content-center">
+                                    <h2 class="f-w-32 f-color-black">Monkey Junior</h2>
+                                    <span class="new-icon">Mới!</span>
+                                </div>
+                            </div>
+
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" name="" id="" placeholder="Nhập họ và tên">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="" id="" placeholder="Bạn bao nhiêu tuổi?">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="" id="" placeholder="Số điện thoại">
+                                </div>
+                                <div class="form-group">
+                                    <select name="" id="" >
+                                        <option value="" disabled selected hidden>Bạn là phụ huynh hay học sinh?</option>
+                                        <option value="">Học sinh</option>
+                                        <option value="">Phụ huynh</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn-submit">Đăng Ký Mua Monkey Junior</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper__page-two">
+                <div class="container">
+                    <div class="title page-two__title text-align-center">
+                        <h1 class="f-w-42 f-color-black"><span class="f-color-red">Monkey Junior</span></h1>
+                        <h1 class="f-w-42 f-color-black">Lộ trình học tiếng Anh toàn diện cho trẻ</h1>
+                        <p class="font-gray-small">Monkey Junior có lộ trình 6 cấp độ bài bản dành cho trẻ từ 0-11 tuổi</p>
+                    </div>
+                    <div class="page-two__content">
+                        <div class="content-wrapper"> 
+                            <div class="content-image is-mobile">
+                                <img src="./assets/img/banner4.png" alt="">
+                            </div>
+                            <div class="content-title">
+                                <h2 class="mt-12 f-w-32 f-color-black">Chương trình duy nhất có nội dung cho trẻ từ 0 tuổi</h2>
+                                <p class="mt-12">Áp dụng các phương pháp giáo dục sớm và nhiều phương pháp giáo dục
+                                    <span class="f-color-red">được kiểm chứng trên thế giới.</span>
+                                </p>   
+                            </div>
+                            <div class="content-image is-desktop">
+                                <img src="./assets/img/banner4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="content-image is-desktop">
+                                <img src="./assets/img/banner5.png" alt="">
+                            </div>
+                            <div class="content-image is-mobile">
+                                <img src="./assets/img/banner5.png" alt="">
+                            </div>
+                            <div class="content-title">
+                                <h2 class="mt-12 f-w-32 f-color-black">Công nghệ M-Write - Xây dựng nền tảng kỹ năng viết</h2>
+                                <p class="mt-12">Giúp trẻ luyện viết các chữ cái tiếng Anh, xây dựng kỹ năng viết bằng
+                                    <span class="f-color-red">công nghệ M-Write độc quyền của Monkey.</span>
+                                </p>   
+                            </div>
+                        </div>
+                        <div class="content-wrapper">
+                            <div class="content-image is-mobile">
+                                <img src="./assets/img/banner6.png" alt="">
+                            </div>
+                            <div class="content-title">
+                                <h2 class="mt-12 f-w-32 f-color-black">Speaking Competition - Thi đấu phát âm kích thích giao tiếp</h2>
+                                <p class="mt-12">Nhận diện và chấm điểm phát âm của trẻ, đảm bảo trẻ tự tin
+                                    <span class="f-color-red">phát âm chuẩn bản xứ.</span>
+                                </p>   
+                            </div>
+                            <div class="content-image is-desktop">
+                                <img src="./assets/img/banner6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex justify-content-center">
+                            <a href="#" class="btn-primary">
+                                <p>Tìm hiểu thêm về Monkey Junior</p>
+                            </a>
+                        </div>
+                        <div class="content-wrapper start-with-monkey">
+                            <div class="content-banner">
+                                <img class="content-banner-background is-desktop is-desktop-1" src="./assets/img/banner8.png" alt="">
+                                <img class="content-banner-background is-mobile is-mobile-1" src="./assets/img/respon-img2.png" alt="">
+                                <div class="content-banner__body d-flex align-items-center justify-content-between">
+                                    <div class="content-banner__body-left">
+                                        <h2 class="f-w-32">Bắt đầu hành trình cùng Monkey Junior</h2>
+                                        <p>Hãy để Monkey đồng hành cùng bé trên hành trình ra thế giới và trở thành công dân toàn cầu ngay hôm nay nhé!</p>
+                                        <div>
+                                            <button class="btn-primary">Nhận tư vấn miễn phí</button>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/banner7.png" alt="" class="is-desktop is-desktop-1">
+                                    <img src="./assets/img/respon-img1.png" alt="" class="is-mobile is-mobile-1">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper__page-three">
+                <div class="container">
+                    <div class="title page-three__title">
+                        <h2 class="f-size-38 text-align-center">Các chương trình <span class="f-color-red">bổ trợ Tiếng Anh</span></h2>
+                    </div>
+                    <div class="list-course-wrapper d-flex justify-content-center align-items-center">
+                        <a href="#" class="course-item">
+                            <div class="header-title-course text-align-center d-flex flex-column align-items-center">
+                                <div class="title-course d-flex align-items-center">
+                                    <h2 class="f-w-32">Monkey Stories</h2>
+                                    <img src="./assets/img/arrow-right.png" alt="">
+                                </div>
+                                <p>Luyện Kỹ Năng Đọc - Hiểu Với Truyện Tranh Tương Tác</p>
+                                <p>(Dành cho trẻ 3-11 tuổi)</p>
+                            </div>
+                            <div class="image-course d-flex">
+                                <img src="./assets/img/banner9.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="course-item">
+                            <div class="header-title-course text-align-center d-flex flex-column align-items-center">
+                                <div class="title-course d-flex align-items-center">
+                                    <h2 class="f-w-32">Monkey Speak</h2>
+                                    <img src="./assets/img/arrow-right.png" alt="">
+                                </div>
+                                <p>Khoá Học Phát Âm Và Giao Tiếp Cho Trẻ</p>
+                                <p>(Dành cho trẻ 3-11 tuổi)</p>
+                            </div>
+                            <div class="image-course d-flex">
+                                <img src="./assets/img/banner10.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="course-item">
+                            <div class="header-title-course text-align-center d-flex flex-column align-items-center">
+                                <div class="title-course d-flex align-items-center">
+                                    <h2 class="f-w-32">Monkey ABC</h2>
+                                    <img src="./assets/img/arrow-right.png" alt="">
+                                </div>
+                                <p>Phát triển 6 ngôn ngữ theo phương pháp Giáo dục sớm</p>
+                                <p>(Dành cho trẻ 0-6 tuổi)</p>
+                            </div>
+                            <div class="image-course d-flex">
+                                <img src="./assets/img/banner11.png" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="course-item">
+                            <div class="header-title-course text-align-center d-flex flex-column align-items-center">
+                                <div class="title-course d-flex align-items-center">
+                                    <h2 class="f-w-32">Monkey Tutoring</h2>
+                                    <img src="./assets/img/arrow-right.png" alt="">
+                                </div>
+                                <p>Học Tiếng Anh Trực Tuyến Cùng Gia Sư Quốc Tế</p>
+                                <p>(Dành cho trẻ 5-12 tuổi)</p>
+                            </div>
+                            <div class="image-course d-flex">
+                                <img src="./assets/img/banner12.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="list-course-wrapper-2">
+                        <div class="content-wrapper">
+                            <div class="content-item text-align-left">
+                               <h2 class="f-w-42 f-color-black"><span class="page-five__content d-flexf-color-red">Bé giỏi toàn diện</span> cùng Monkey</h2> 
+                               <p class="font-gray-small">Từ học tiếng Anh, tiếng Việt cho tới học Toán! Với các bài học vui nhộn và thú vị, Monkey luôn là người bạn đồng hành đáng tin tưởng của các bạn nhỏ độ tuổi Mầm non và Tiểu học.</p>
+                            </div>
+                            <a href="#" class="content-card-item">
+                                <div class="card-item">
+                                    <div class="card-item__image">
+                                        <img src="./assets/img/banner13.png" alt="">
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body-title text-orange">
+                                            <h2 class="f-size-38 text-align-center">Moneky Math</h2>
+                                            <img src="./assets/img/arrow-orange.png" alt="">
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <p class="text-align-center f-color-gray">Ứng dụng học Toán theo Chương trình GDPT mới cho trẻ Mầm non & Tiểu học</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="content-card-item">
+                                <div class="card-item">
+                                    <div class="card-item__image">
+                                        <img src="./assets/img/banner14.png" alt="">
+                                    </div>
+                                    <div class="card-item__body">
+                                        <div class="card-item__body-title text-purple">
+                                            <h2 class="f-size-38 text-align-center">VMonkey</h2>
+                                            <img src="./assets/img/arrow-pupler.png" alt="">
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <p class="text-align-center f-color-gray">Học tiếng Việt theo Chương trình GDPT mới cho trẻ Mầm non & Tiểu học</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper__page-four">
+                <div class="container">
+                    <div class="title page-four__title">
+                        <h2 class="f-size-38 text-align-center"><span class="f-color-red">Bộ giải pháp</span>  cho trường học</h2>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="page-four__left">
+                            <img src="./assets/img/banner15.png" alt="">
+                        </div>
+                        <div class="page-four__right flex-column">
+                            <h2 class="f-w-32 f-color-red">Monkey Class</h2>
+                            <h3 class="font-gray-small">Bộ giải pháp công nghệ toàn diện cho trường học</h3>
+                            <ul class="list-solve">
+                                <li>
+                                    <img src="./assets/img/check-icon.png" alt="">
+                                    <p>Quản lý giáo viên, học sinh, lộ trình học... trên một nền tảng</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/check-icon.png" alt="">
+                                    <p>Giáo viên và phụ huynh dễ dàng trao đổi thông tin</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/check-icon.png" alt="">
+                                    <p>Học sinh hào hứng làm bài tập sinh động trên Monkey Junior</p>
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="btn-primary">Tìm hiểu thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="page-four__right">
+                            <h2 class="f-w-32 f-color-red">Monkey Kindy</h2>
+                            <h3 class="font-gray-small">Chương trình học Tiếng Anh bản quyền cho trẻ mầm non</h3>
+                            <ul class="list-solve">
+                                <li>
+                                    <img src="./assets/img/check-icon.png" alt="">
+                                    <p>Lộ trình học bài bản cho từng độ tuổi</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/check-icon.png" alt="">
+                                    <p>Mô hình học qua video với sự hỗ trợ của Giáo viên chủ nhiệm</p>
+                                </li>
+                                <li>
+                                    <img src="./assets/img/check-icon.png" alt="">
+                                    <p>Ứng dụng bổ trợ học ở nhà cho trẻ vô cùng tiện lợi</p>
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="btn-primary">Tìm hiểu thêm</a>
+                            </div>
+                        </div>
+                        <div class="page-four__left">
+                            <img src="./assets/img/banner16.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper__page-five">
+                <div class="container">
+                    <div class="page-five__title d-flex flex-column align-items-center">
+                        <h2 class="mt-12 text-align-center f-w-32 f-color-black">Ứng Dụng Tiếng Anh Cho Trẻ Em</h2>
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/icon/rice-left-small.png" alt="">
+                            <span class="f-w-42 f-color-red">Top 5 Thế Giới</span>
+                            <img src="./assets/icon/rice-right-small.png" alt="">
+                        </div>
+                        <p class="font-gray-small">Đơn vị tiên phong về giáo dục sớm với hơn 10 năm kinh nghiệm giành nhiều nhiều giải thưởng trong và ngoài nước</p>
+                    </div>
+                    <ul class="page-five__content d-flex justify-content-center">
+                        <li class="page-five__content-item">
+                            <a href="#">
+                                <img src="./assets/img/banner17.png" alt="">
+                                <p class="font-gray-small text-align-center">Giải Nhất Nhân Tài Đất Việt</p>
+                            </a>
+                        </li>
+                        <li class="page-five__content-item">
+                            <a href="#">
+                                <img src="./assets/img/banner18.png" alt="">
+                                <p class="font-gray-small text-align-center">Giải Nhất Sáng Kiến Toàn Cầu</p>
+                            </a>
+                        </li>
+                        <li class="page-five__content-item">
+                            <a href="#">
+                                <img src="./assets/img/banner19.png" alt="">
+                                <p class="font-gray-small text-align-center">Giải Nhất Cuộc Thi AEA tại Nhật Bản</p>
+                            </a>
+                        </li>
+                        <li class="page-five__content-item">
+                            <a href="#">
+                                <img src="./assets/img/banner21.png" alt="">
+                                <p class="font-gray-small text-align-center">Giải Vàng Tại ASEAN ICT Awards 2016</p>
+                            </a>
+                        </li>
+                        <li class="page-five__content-item">
+                            <a href="#">
+                                <img src="./assets/img/banner20.png" alt="">
+                                <p class="font-gray-small text-align-center">Bằng Khen Của Thủ Tướng Chính Phủ</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="wrapper__page-six">
+                <div class="container">
+                    <div class="page-six__content d-flex align-items-center">
+                        <div class="page-six__content-left d-flex flex-column">
+                            <h2 class="f-w-42 f-color-red">Monkey Junior</h2>
+                            <h3 class="f-w-32 f-color-red">Siêu Ứng Dụng Được Yêu Thích Bởi 15 Triệu Trẻ Em Trên Toàn Thế Giới</h3>
+                            <p class="font-gray-small">Trải qua gần 10 năm hình thành và phát triển, Monkey luôn nỗ lực từng ngày để đưa tiếng Anh và Giáo dục sớm đến nhiều trẻ em hơn tại Việt Nam và trên toàn thế giới.</p>  
+                        </div>
+                        <div class="page-six__content-right">
+                            <img src="./assets/img/banner22.png" alt="">
+                        </div>
+                    </div>   
+                    <div class="page-six__banner">
+                        <div class="page-six__title d-flex flex-column align-items-center">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/icon/rice-left-big.png" alt="">
+                                <div class="d-flex flex-column align-items-center">
+                                    <h2 class="f-w-42 f-color-white">Hơn 15 TRIỆU TRẺ EM</h2>   
+                                    <p class="f-w-20 f-color-white text-align-center">Trên toàn thế giới học tiếng Anh cùng Monkey mỗi ngày</p>
+                                </div>
+                                <img src="./assets/icon/rice-right-big.png" alt="">
+                            </div>
+                        </div>
+                        <div class="page-six__content d-flex">
+                            <div class="page-six__content-item gap-12 d-flex flex-column justify-content-center align-items-center">
+                                <div class="d-flex align-items-center gap-12">
+                                    <img src="./assets/icon/medal.png" alt="">
+                                    <h2 class="f-w-32 f-color-white">Top 1</h2>
+                                </div>
+                                <p class="f-w-20 f-color-white text-align-center">Ứng dụng tiên phong áp dụng phương pháp Giáo dục sớm tại Việt Nam</p>
+                            </div>
+                            <div class="page-six__content-item gap-12 d-flex flex-column justify-content-center align-items-center">
+                                <div class="d-flex align-items-center gap-12">
+                                    <img src="./assets/icon/star.png" alt="">
+                                    <h2 class="f-w-32 f-color-white">95%</h2>
+                                </div>
+                                <p class="f-w-20 f-color-white text-align-center">Người dùng đánh giá 5 sao</p>
+                            </div>
+                            <div class="page-six__content-item gap-12 d-flex flex-column justify-content-center align-items-center">
+                                <div class="d-flex align-items-center gap-12">
+                                    <img src="./assets/icon/earth.png" alt="">
+                                    <h2 class="f-w-32 f-color-white text-align-center">108 QUỐC GIA</h2>
+                                </div>
+                                <p class="f-w-20 f-color-white text-align-center">Và vùng lãnh thổ có trẻ em học tiếng Anh cùng Monkey</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper__page-seven">
+                <div class="container">
+                    <div class="page-seven__content d-flex gap-24">
+                        <div class="page-seven__content-left d-flex flex-column gap-24">
+                            <h2 class="f-w-42 f-color-red">"Bạn thân của con"</h2>
+                            <h3 class="f-w-32 f-color-black">Đừng để cuộc sống cuốn bạn đi xa khỏi những đứa con của mình</h3>
+                            <p class="font-gray-small">Đôi khi những lời nhận xét tưởng chừng nhỏ nhặt, những lời hứa tưởng chừng dễ quên lại gây ra nỗi buồn tủi cho người thân trong gia đình hơn những gì bạn nghĩ. Hãy cùng xem và chia sẻ cảm nhận của bạn về bộ phim ngắn đầy xúc động được kể qua lăng kính của cậu bé 6 tuổi này nhé!</p>
+                            <h5>*Một bộ phim xúc động dựa trên câu chuyện có thật</h5>
+                        </div>
+                        <div class="page-seven__content-right d-flex align-items-center">
+                            <img src="./assets/img/banner25.png" alt="">
+                            <div class="play-icon-wrapper d-flex justify-content-center align-items-center">
+                                <img src="./assets/img/banner24.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper__page-eight">
+                <div class="container">
+                    <div class="page-eight__header d-flex justify-content-between align-items-center mt-32">
+                        <div class="page-eight__header-left">
+                            <h3 class="f-w-20 f-color-red">Tin tức</h3>
+                            <h2 class="f-w-42 f-color-black"><span class="f-color-red">Báo chí</span> nói về chúng tôi</h2>
+                        </div>
+                        <div class="page-eight__header-right">
+                            <a href="#">Xem tất cả <span>></span></a>
+                        </div>
+                    </div>
+                    <div class="page-eight__content d-flex gap-24">
+                        <div class="page-eight__content-left">
+                            <a href="#">
+                                <img src="./assets/img/banner26.png" alt="">
+                            </a>
+                            <div class="page-eight__content-left-body d-flex flex-column gap-12">
+                                <a href="#">
+                                    <h2 class="f-w-24 f-color-white">Monkey Junior lọt top 5 thế giới app học tiếng Anh cho trẻ em</h2>
+                                </a>
+                                <p class="f-w-18 f-color-white mt-12">
+                                    Theo báo cáo "Triển vọng thị trường ứng dụng học tiếng Anh cho trẻ em đến năm 2025" của Advance Market Analytics (Anh), Monkey Junior là một trong năm ứng dụng học tiếng Anh cho trẻ em có nhiều người dùng nhất thế giới.
+                                </p>
+                                <div class="more-info-wrapper d-flex justify-content-between align-items-center">
+                                    <img src="./assets/img/logo-dantri.png" width="100px">
+                                    <a href="#" class="f-w-16 ">Tìm hiểu thêm <span>></span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-eight__content-right d-flex flex-column gap-24">
+                            <div class="page-eight__content-right-item d-flex gap-24">
+                                <div class="content-right-item__img">
+                                    <img src="./assets/img/banner27.jpg" alt="">
+                                </div>
+                                <div class="content-right-item__body-img d-flex flex-column gap-32">
+                                    <div>
+                                        <a href="#">
+                                            <h2 class="f-w-16 f-color-gray">Monkey Junior đạt giải Nhất cuộc thi ASA (Asian Entrepreneurship Award) tại Nhật</h2>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <img src="./assets/img/logo-dantri.png" width="80px">
+                                        <a href="#" class="f-w-16 f-color-gray">Tìm hiểu thêm <span>></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-eight__content-right-item d-flex gap-24">
+                                <div class="content-right-item__img">
+                                    <img src="./assets/img/banner28.jpeg" alt="">
+                                </div>
+                                <div class="content-right-item__body-img d-flex flex-column gap-32">
+                                    <div>
+                                        <a href="#">
+                                            <h2 class="f-w-16 f-color-gray">
+                                                Tìm phần mềm dạy con, ông bố thành CEO công ty
+                                            </h2>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <img src="./assets/img/logo-vnexpress.png" width="100px">
+                                        <a href="#" class="f-w-16 f-color-gray">Tìm hiểu thêm <span>></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page-eight__content-right-item d-flex gap-24">
+                                <div class="content-right-item__img">
+                                    <img src="./assets/img/banner29.png" alt="">
+                                </div>
+                                <div class="content-right-item__body-img d-flex flex-column gap-32">
+                                    <div>
+                                        <a href="#">
+                                            <h2 class="f-w-16 f-color-gray">
+                                                Trao thưởng cho Doanh nhân Công nghệ người Việt Đào Xuân Hoàng - Nhà sáng lập ứng dụng Monkey Junior
+                                            </h2>
+                                        </a>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <img src="./assets/img/logo-brandsvietnam.png" width="100px">
+                                        <a href="#" class="f-w-16 f-color-gray">Tìm hiểu thêm <span>></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-all text-align-center">
+                        <a href="#">Xem tất cả <span>></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper__page-nine">
+                <div class="container">
+                    <div class="page-nine__header d-flex justify-content-between align-items-center mt-32">
+                        <div class="page-nine__header-left">
+                            <h2 class="f-w-42 f-color-black"><span class="f-color-red">Ba mẹ</span> cần biết</h2>
+                        </div>
+                        <div class="page-nine__header-right">
+                            <a href="#">Xem tất cả <span>></span></a>
+                        </div>
+                    </div>
+                    <div class="list-card-wrapper filtering flex justify-content-center gap-12">
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/icon/presen1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    Phương pháp Active Recall là gì? Kỹ thuật ghi nhớ chủ động để tăng cường trí nhớ cho trẻ
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                                Bạn có biết rằng việc học sẽ trở nên thú vị và hiệu quả hơn nếu chúng ta biết cách ghi nhớ đúng cách? Một trong những phương pháp tuyệt vời mà các bạn nhỏ và phụ huynh có thể áp dụng là Active Recall – hay còn gọi là kỹ thuật ghi nhớ chủ động. Đây là cách học giúp não bộ nhớ lâu hơn và tăng cường khả năng ghi nhớ bằng việc chủ động ôn lại kiến thức thay vì chỉ đọc qua một lần. Để hiểu rõ hơn về phương pháp Active Recall là gì? Cách thực hiện phương pháp này như thế nào? Hãy cùng xem thêm ở bài viết dưới đây nhé!
+                                            </p>      
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>47</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/icon/presen2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    Phương pháp ghi chú Cornell: Cách ghi chú khoa học giúp học tập hiệu quả hơn cho trẻ
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                                Ghi nhớ hiệu quả là bí quyết thành công trong việc học, đặc biệt đối với trẻ em. Phương pháp ghi chú Cornell là một cách khoa học giúp các bé tổ chức thông tin một cách hệ thống và dễ dàng ôn tập. Nhờ vào phương pháp này, trẻ không chỉ nâng cao khả năng ghi nhớ mà còn phát triển tư duy phản biện. Hãy cùng khám phá chi tiết về phương pháp Cornell là gì? ngay trong bài viết dưới đây nhé!
+                                            </p>
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>42</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/icon/presen3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    Phương pháp Pomodoro: Cách tối ưu hóa hiệu suất học tập chỉ trong 25 phút
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                                Bạn có thường xuyên cảm thấy khó tập trung khi học bài? Những giờ học dài dằng dặc khiến bạn mệt mỏi và không thể tiếp thu kiến thức hiệu quả? Đừng lo lắng, phương pháp Pomodoro sẽ là giải pháp hoàn hảo giúp bạn tăng cường hiệu suất học tập và đạt được kết quả cao hơn mong đợi. Xem ngay!
+                                            </p>
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between align-items-center">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>49</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/icon/presen4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    Phương pháp ghi chú Cornell: Cách ghi chú khoa học giúp học tập hiệu quả hơn cho trẻ
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                                Ghi nhớ hiệu quả là bí quyết thành công trong việc học, đặc biệt đối với trẻ em. Phương pháp ghi chú Cornell là một cách khoa học giúp các bé tổ chức thông tin một cách hệ thống và dễ dàng ôn tập. Nhờ vào phương pháp này, trẻ không chỉ nâng cao khả năng ghi nhớ mà còn phát triển tư duy phản biện. Hãy cùng khám phá chi tiết về phương pháp Cornell là gì? ngay trong bài viết dưới đây nhé!                                            
+                                            </p>
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between align-items-center">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>50</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/icon/presen5.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    Phương pháp Pomodoro: Cách tối ưu hóa hiệu suất học tập chỉ trong 25 phút
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                                Bạn có thường xuyên cảm thấy khó tập trung khi học bài? Những giờ học dài dằng dặc khiến bạn mệt mỏi và không thể tiếp thu kiến thức hiệu quả? Đừng lo lắng, phương pháp Pomodoro sẽ là giải pháp hoàn hảo giúp bạn tăng cường hiệu suất học tập và đạt được kết quả cao hơn mong đợi. Xem ngay! 
+                                            </p>
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between align-items-center">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>52</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/icon/presen7.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    Phương pháp Feynman: Bí quyết học hiệu quả từ thiên tài vật lý!
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                                Bạn có muốn học tập như một nhà khoa học không? Phương pháp Feynman sẽ giúp bạn biến điều đó thành hiện thực. Được phát triển bởi thiên tài vật lý Richard Feynman, phương pháp này không chỉ giúp bạn hiểu sâu kiến thức mà còn rèn luyện khả năng tư duy logic và giải quyết vấn đề. Hãy cùng Monkey khám phá cách thức áp dụng phương pháp này để đạt hiệu quả học tập cao nhất!
+                                            </p>
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between align-items-center">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>52</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/icon/presen8.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    Phương pháp Spaced Repetition: Bí quyết “hack” trí nhớ!
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                                Bạn luôn quên những gì đã học sau một thời gian ngắn? Cảm thấy nản lòng vì không thể nhớ được từ vựng mới hay các công thức toán học? Đừng lo lắng, Monkey sẽ giới thiệu cho bạn một phương pháp học tập thần kỳ giúp bạn ghi nhớ thông tin lâu bền hơn bao giờ hết: Phương pháp Spaced Repetition - bí quyết "hack" trí nhớ mà bất kỳ ai cũng nên biết.
+                                            </p>
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between align-items-center">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>42</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/icon/presen10.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    10 Cách học hiệu quả cho học sinh bận rộn không có thời gian
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                             Trong cuộc sống hàng ngày, các bé học sinh thường phải dàn trải thời gian cho nhiều hoạt động như học tập, vui chơi và tham gia các hoạt động ngoại khóa. Điều này đôi khi gây khó khăn trong việc quản lý thời gian. Vậy làm sao để học hiệu quả hơn khi lịch trình bận rộn? Bài viết dưới đây sẽ giới thiệu những cách học hiệu quả cho học sinh bận rộn, giúp các bé tối ưu hóa thời gian học tập mà vẫn có thể tận hưởng những khoảnh khắc vui vẻ bên gia đình, bạn bè.
+                                            </p>
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between align-items-center">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>59</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/icon/presen11.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    Cách lấy lại gốc tiếng Anh lớp 9 nhanh chóng, hiệu quả
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                                Bạn đang loay hoay với việc lấy lại gốc tiếng Anh lớp 9? Cảm thấy quá tải và không biết bắt đầu từ đâu? Đừng lo lắng, bài viết này sẽ giúp bạn tìm ra phương pháp học hiệu quả nhất!
+                                            </p>
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between align-items-center">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>42</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/img/banner32.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    Cách lấy lại gốc tiếng Anh lớp 8 cực kì nhanh chóng và hiệu quả
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                                Bạn đang mất gốc tiếng Anh và không biết bắt đầu từ đâu? Bạn muốn lấy lại gốc tiếng Anh lớp 8 nhanh chóng để đạt điểm cao trong các bài kiểm tra? Bài viết này sẽ chia sẻ lộ trình chuẩn và những bí quyết học tập hiệu quả, giúp bạn xây dựng lại nền tảng tiếng Anh vững chắc.
+                                            </p>
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between align-items-center">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>155</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/icon/presen1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    Phương pháp Active Recall là gì? Kỹ thuật ghi nhớ chủ động để tăng cường trí nhớ cho trẻ
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                                Bạn có biết rằng việc học sẽ trở nên thú vị và hiệu quả hơn nếu chúng ta biết cách ghi nhớ đúng cách? Một trong những phương pháp tuyệt vời mà các bạn nhỏ và phụ huynh có thể áp dụng là Active Recall – hay còn gọi là kỹ thuật ghi nhớ chủ động. Đây là cách học giúp não bộ nhớ lâu hơn và tăng cường khả năng ghi nhớ bằng việc chủ động ôn lại kiến thức thay vì chỉ đọc qua một lần. Để hiểu rõ hơn về phương pháp Active Recall là gì? Cách thực hiện phương pháp này như thế nào? Hãy cùng xem thêm ở bài viết dưới đây nhé!
+                                            </p>      
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>47</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item card-item-slick">
+                                    <div class="card-item__image">
+                                        <a href="#">
+                                            <img src="./assets/icon/presen2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-item__body-slick">
+                                        <div class="card-item__body-badge mt-32 badge-yellow">
+                                            <a href="#">Tips học tập</a>
+                                        </div>
+                                        <div class="card-item__body-content">
+                                            <a href="#">
+                                                <h2 class="f-w-14 mt-16">
+                                                    Phương pháp ghi chú Cornell: Cách ghi chú khoa học giúp học tập hiệu quả hơn cho trẻ
+                                                </h2>
+                                            </a>
+                                            <p class="mt-16">
+                                                Ghi nhớ hiệu quả là bí quyết thành công trong việc học, đặc biệt đối với trẻ em. Phương pháp ghi chú Cornell là một cách khoa học giúp các bé tổ chức thông tin một cách hệ thống và dễ dàng ôn tập. Nhờ vào phương pháp này, trẻ không chỉ nâng cao khả năng ghi nhớ mà còn phát triển tư duy phản biện. Hãy cùng khám phá chi tiết về phương pháp Cornell là gì? ngay trong bài viết dưới đây nhé!
+                                            </p>
+                                        </div>
+                                        <div class="card-item__body-footer d-flex justify-content-between">
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/clock-icon.png" alt="">
+                                                <span>04/11/2024</span>
+                                            </p>
+                                            <p class="d-flex align-items-center algin-items-center gap-4">
+                                                <img src="./assets/img/eye.png" alt="">
+                                                <span>42</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <ul class="slick-dot d-flex justify-content-center">
+                            <li class="active slick-item">
+                            </li>
+                            <li class="slick-item">
+                            </li>
+                            <li class="slick-item">
+                            </li>
+                            <li class="slick-item">
+                            </li>
+                            <li class="slick-item">
+                            </li>
+                            <li class="slick-item">
+                            </li>
+                            <li class="slick-item">
+                            </li>
+                            <li class="slick-item">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__top d-flex">
+                <div class="footer__top-left">
+                    <span class="f-w-16">Công ty Cổ phần Early Start</span>
+                </div>
+                <div class="footer__top-right flex flex-column gap-12">
+                    <p>Giấy phép ĐKKD số 0106651756 do Sở Kế hoạch và Đầu tư TP Hà Nội cấp ngày 01/10/2014, thay đổi lần thứ 3 ngày 13/11/2020</p>
+                    <p>Trụ sở chính: Tầng 2, Tòa nhà FS, TTTM TNR Gold Season, số 47 Nguyễn Tuân, P. Thanh Xuân Trung, Q. Thanh Xuân, TP. Hà Nội</p>
+                    <p>Người đại diện pháp luật: Ông Đào Xuân Hoàng - Nhà sáng lập & Giám đốc điều hành</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="max-width: 1140px;">
+            <div class="footer__middle flex justify-content-between">
+                <div class="footer__middle-left">
+                    <div>
+                        <a href="#"><img src="./assets/img/logo.png" width="128px" height="32px"></a>
+                    </div>
+                    <div>
+                        <a href="#"><img src="./assets/icon/dcma.png" alt="" width="74px" height="24px"></a>
+                        <a href="#"><img src="./assets/icon/kidsafe.png" alt="" width="74px" height="26px"></a>
+                        <a href="#"><img src="./assets/icon/check.png" alt="" width="74px" height="28px"></a>
+                    </div>
+                    <div class="social d-flex flex-column gap-12">
+                        <p class="f-w-16">Kết nối với Monkey</p>
+                        <div class="list-social flex">
+                            <a href="#" class="facebook">facebook</a>
+                            <a href="#" class="youtube">youtube</a>
+                        </div>
+                    </div>
+                    <div class="contact mtp-16 d-flex flex-column gap-12">
+                        <p class="f-w-16">Hotline và Email hỗ trợ</p>
+                        <div class="list-contact d-flex gap-12">
+                            <a href="tel:1900 63 60 52" class="hotline d-flex align-items-center gap-4">
+                                <img src="./assets/icon/phone.png" alt="">
+                                1900 63 60 52
+                            </a>
+                            <a href="mailto:monkeyxinchao@monkey.edu.vn" class="email d-flex align-items-center gap-4">
+                                <img src="./assets/icon/mail-01.png" alt="">
+                                monkeyxinchao@monkey.edu.vn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__middle-right">
+                    <div class="flex">
+                        <div class="col">
+                            <span class="f-w-14">SẢN PHẨM</span>
+                            <ul class="mtp-32 d-flex flex-column gap-12">
+                                <li><a href="#">Monkey Junior</a></li>
+                                <li><a href="#">Monkey ABC</a></li>
+                                <li><a href="#">Monkey Speak</a></li>
+                                <li><a href="#">Monkey Stories</a></li>
+                                <li><a href="#">Monkey Tutoring</a></li>
+                                <li><a href="#">Monkey Math</a></li>
+                                <li><a href="#">VMonkey</a></li>
+                                <li><a href="#">Monkey Class</a></li>
+                                <li><a href="#">Monkey Kindy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <span class="f-w-14">VỀ MONKEY</span>
+                            <ul class="mtp-32 d-flex flex-column gap-12">
+                                <li><a href="#">Giới Thiệu</a></li>
+                                <li><a href="#">Câu Chuyện Thương Hiệu</a></li>
+                                <li><a href="#">Thành Tựu Nổi Bật</a></li>
+                                <li><a href="#">Tin Tức</a></li>
+                                <li><a href="#">Liên Hệ</a></li>
+                                <li><a href="#">Tuyển Dụng</a></li>
+                                <li><a href="#">Điều Khoản Sử Dụng</a></li>
+                                <li><a href="#">Chính Sách Bảo Mật</a></li>
+                                <li><a href="#">Đăng Ký Đại Lý</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <span class="f-w-14">HỖ TRỢ</span>
+                            <ul class="mtp-32 d-flex flex-column gap-12">
+                                <li><a href="#">Kích Hoạt Tài Khoản</a></li>
+                                <li><a href="#">Hướng Dẫn Học</a></li>
+                                <li><a href="#">Hỗ Trợ Khách Hàng</a></li>
+                                <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                                <li><a href="#">Cộng Đồng</a></li>
+                                <li><a href="#">Hướng Dẫn Thanh Toán</a></li>
+                                <li><a href="#">Bản Đồ Trang Web</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__middle-right-download mtp-20 d-flex gap-12">
+                        <a href="#"><img src="./assets/icon/google_play.jpg"></a>
+                        <a href="#"><img src="./assets/icon/app_store.jpg"></a>
+                        <a href="#"><img src="./assets/icon/windows.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__bottom flex justify-content-between align-items-center">
+                <span>2021 - Bản quyền của Công ty Cổ phần Early Start</span>
+                <div class="language-dropdown">
+                    <button class="dropdown-toggle d-flex align-items-center" type="button">
+                        <img src="./assets/icon/vietnam.svg" alt="vi-flag" class="icon-lang" width="20" height="15">
+                        Tiếng việt 
+                    </button>
+                    <div class="dropdown-menu flex-column align-items-center">
+                        <a href="#" class="dropdown-item active item-language d-flex" data-language="vi">
+                            <img src="./assets/icon/vietnam.svg" alt="" class="icon-lang" width="20" height="15">
+                            Việt Nam
+                        </a>
+                        <a href="#" class="dropdown-item item-language d-flex" data-language="en">
+                            <img src="./assets/icon/us-flag_v2.jpg" alt="" class="icon-lang">
+                            Engish
+                        </a>
+                        <a href="#" class="dropdown-item item-language d-flex" width="20" height="15" data-language="tl">
+                            <img src="./assets/icon/thailand.svg" alt="" class="icon-lang">
+                            ประเทศไทย
+                        </a>
+                        <a href="#" class="dropdown-item item-language d-flex" data-language="ml">
+                            <img src="./assets/icon/malaysia_2.jpg" alt="" class="icon-lang">
+                            Malaysia
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>  
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+
+</body>
+</html>
